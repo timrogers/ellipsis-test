@@ -8,7 +8,7 @@ export interface HogQLQueryOptions {
   apiKey: string;
 
   /**
-   * The base URL for the PostHog API. Defaults to https://us.posthog.com. Can be overridden to point to EU Cloud (https://eu.posthog.com) or a self-hosted instance.
+   * The base URL for the PostHog API. Defaults to https://api.posthog.com. Can be overridden to point to EU Cloud (https://eu.posthog.com) or a self-hosted instance.
    */
   baseUrl?: string;
 
