@@ -159,7 +159,7 @@ export const hogql = async <T extends HogQLScalar[][] = HogQLScalar[][]>(
       const rateLimitResetsInSeconds = parseDelayFromThrottledErrorDetail(detail);
 
       if (retryOnRateLimit) {
-        await sleep(rateLimitResetsInSeconds * 1_000);
+        await sleep(rateLimitResetsInSeconds * 2_000);
         return hogql(query, {
           apiKey,
           baseUrl,
