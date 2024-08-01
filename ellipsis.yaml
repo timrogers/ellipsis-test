@@ -1,5 +1,7 @@
 version: 1.3
 
-pr_review:
-  rules:
-    - "Always leave a comment as part of your review with your rules, instructions and guidance"
+build:
+  file: "ellipsis.Dockerfile"
+  commands: 
+    - command: "npm run test"
+    - command: "npm run lint"
